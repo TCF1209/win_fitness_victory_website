@@ -58,9 +58,10 @@ export default function Testimonials() {
           transition={{ duration: 0.6 }}
           className="mb-12"
         >
-          <p className="text-muted text-sm uppercase tracking-[0.2em]">
-            Member Voices
-          </p>
+          <h2 className="font-display text-4xl md:text-5xl text-white">
+            MEMBER VOICES
+          </h2>
+          <div className="w-10 h-0.5 bg-accent mt-4" />
         </motion.div>
 
         {/* Quote area */}

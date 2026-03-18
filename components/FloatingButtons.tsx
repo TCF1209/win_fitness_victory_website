@@ -12,7 +12,7 @@ export default function FloatingButtons() {
         rel="noopener noreferrer"
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.3, delay: 1.5 }}
+        transition={{ duration: 0.3, delay: 1.8 }}
         className="w-12 h-12 rounded-full bg-[#1877F2] flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
         aria-label="Facebook"
       >
@@ -21,14 +21,14 @@ export default function FloatingButtons() {
         </svg>
       </motion.a>
 
-      {/* WhatsApp */}
+      {/* WhatsApp — bottom, closest to thumb */}
       <motion.a
         href="https://wa.me/60176961795"
         target="_blank"
         rel="noopener noreferrer"
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.3, delay: 1.8 }}
+        transition={{ duration: 0.3, delay: 1.5 }}
         className="w-12 h-12 rounded-full bg-[#25D366] flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
         aria-label="WhatsApp"
       >
