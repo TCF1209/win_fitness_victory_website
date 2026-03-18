@@ -20,3 +20,36 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+@layer utilities {
+  .diagonal-lines {
+    background-image: repeating-linear-gradient(
+      45deg,
+      rgba(0, 194, 255, 0.04) 0px,
+      rgba(0, 194, 255, 0.04) 1px,
+      transparent 1px,
+      transparent 40px
+    );
+  }
+
+  .grid-pattern {
+    background-image: radial-gradient(
+      circle,
+      rgba(0, 194, 255, 0.06) 1px,
+      transparent 1px
+    );
+    background-size: 32px 32px;
+  }
+
+  .glow-neon {
+    box-shadow: 0 0 20px rgba(0, 194, 255, 0.25);
+  }
+
+  .glow-accent {
+    box-shadow: 0 0 30px rgba(232, 64, 28, 0.3);
+  }
+
+  .text-glow-neon {
+    text-shadow: 0 0 20px rgba(0, 194, 255, 0.5);
+  }
+}
