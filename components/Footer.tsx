@@ -60,7 +60,7 @@ export default function Footer() {
           <div className="flex items-center gap-4">
             {/* Facebook */}
             <a
-              href="#"
+              href="https://www.facebook.com/luxuriousgym/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted hover:text-white/80 transition-colors p-2"
