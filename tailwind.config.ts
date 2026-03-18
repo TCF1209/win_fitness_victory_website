@@ -15,8 +15,8 @@ const config: Config = {
         muted: "#8892b0",
       },
       fontFamily: {
-        display: ["Bebas Neue", "sans-serif"],
-        body: ["DM Sans", "sans-serif"],
+        display: ["var(--font-display)", "sans-serif"],
+        body: ["var(--font-body)", "sans-serif"],
       },
     },
   },
