@@ -54,12 +54,8 @@ export default function Stats() {
   const inView = useInView(ref, { once: true });
 
   return (
-    <section ref={ref} className="relative bg-blue py-6 diagonal-lines overflow-hidden">
-      {/* Edge fades — hidden on mobile */}
-      <div className="absolute inset-y-0 left-0 w-8 md:w-16 bg-gradient-to-r from-blue to-transparent z-10 pointer-events-none" />
-      <div className="absolute inset-y-0 right-0 w-8 md:w-16 bg-gradient-to-l from-blue to-transparent z-10 pointer-events-none" />
-
-      <div className="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-6">
+    <section ref={ref} className="relative -mt-16 z-20 mx-4 md:mx-8 lg:mx-auto max-w-6xl bg-blue/90 backdrop-blur-sm py-5 rounded-sm diagonal-lines overflow-hidden border border-white/5">
+      <div className="max-w-5xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-6">
         {stats.map((stat, i) => (
           <motion.div
             key={stat.label}

@@ -125,9 +125,10 @@ export default function Hero() {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 1.2 }}
-          className="mt-4 text-lg md:text-xl text-muted max-w-xl"
+          className="mt-4 text-lg md:text-xl max-w-xl"
         >
-          Klang&apos;s Premier Fitness Club — Bandar Botanik
+          <span className="text-white font-semibold">Win Fitness Factory</span>
+          <span className="text-muted"> — Bandar Botanik, Klang</span>
         </motion.p>
 
         <motion.div
