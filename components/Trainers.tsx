@@ -1,25 +1,26 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const trainers = [
   {
     name: "Coach Ahmad",
-    initials: "CA",
     specialization: "Strength & Conditioning",
     bio: "10+ years of experience helping members achieve their peak performance.",
+    image: "/images/trainers/S&C_coach.png",
   },
   {
     name: "Coach Sarah",
-    initials: "CS",
     specialization: "Yoga & Rehabilitation",
     bio: "Certified in exercise therapy with expertise in scoliosis and senior fitness programs.",
+    image: "/images/trainers/yogo_coach.png",
   },
   {
     name: "Coach Raj",
-    initials: "CR",
     specialization: "Muay Thai & HIIT",
     bio: "Professional fighter turned coach, bringing authentic martial arts training to every session.",
+    image: "/images/trainers/muay_thai_coach.png",
   },
 ];
 
@@ -70,11 +71,15 @@ export default function Trainers() {
                   }`}
                 />
 
-                {/* Avatar placeholder */}
-                <div className="flex-shrink-0 w-16 h-16 md:w-20 md:h-20 rounded-full border-2 border-neon/20 bg-gradient-to-br from-accent/10 to-neon/10 flex items-center justify-center">
-                  <span className="font-display text-xl md:text-2xl text-white/40">
-                    {trainer.initials}
-                  </span>
+                {/* Coach photo */}
+                <div className="flex-shrink-0 w-16 h-16 md:w-20 md:h-20 rounded-full border-2 border-neon/20 overflow-hidden">
+                  <Image
+                    src={trainer.image}
+                    alt={trainer.name}
+                    width={80}
+                    height={80}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
 
                 {/* Info */}
