@@ -151,9 +151,7 @@ export default function Hero() {
           className="mt-8 flex flex-col sm:flex-row gap-4"
         >
           <a
-            href="https://wa.me/60333180999"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#join"
             className="bg-accent hover:bg-accent/90 text-white px-8 py-3 font-semibold uppercase tracking-wider transition-colors"
             style={{ clipPath: "polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px))" }}
           >

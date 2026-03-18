@@ -57,9 +57,7 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="https://wa.me/60333180999"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#join"
               className="bg-accent hover:bg-accent/90 text-white px-6 py-2 font-semibold text-sm uppercase tracking-wider transition-colors"
               style={{ clipPath: "polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px))" }}
             >
@@ -103,9 +101,8 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="https://wa.me/60333180999"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#join"
+              onClick={() => setMobileOpen(false)}
               className="block bg-accent text-white px-6 py-2 font-semibold text-sm uppercase tracking-wider text-center"
             >
               Join Now
