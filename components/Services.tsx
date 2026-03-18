@@ -122,7 +122,7 @@ export default function Services() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group relative bg-navy border border-white/10 rounded-sm p-6 pl-9 overflow-hidden hover:border-white/20 transition-all duration-300"
+              className="group relative bg-navy border border-white/10 rounded-sm p-4 pl-7 md:p-6 md:pl-9 overflow-hidden hover:border-white/20 transition-all duration-300"
             >
               {/* Left accent bar */}
               <div className="absolute left-0 top-0 bottom-0 w-1 bg-accent group-hover:w-1.5 transition-all duration-300" />

@@ -145,16 +145,17 @@ export default function JoinForm() {
                 id="interest"
                 value={form.interest}
                 onChange={(e) => setForm({ ...form, interest: e.target.value })}
-                className="w-full bg-blue/40 border border-white/10 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-neon/50 transition-colors"
+                className="w-full bg-[#0d1040] border border-white/10 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-neon/50 transition-colors appearance-none"
+                style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%238892b0' d='M6 8L1 3h10z'/%3E%3C/svg%3E\")", backgroundRepeat: "no-repeat", backgroundPosition: "right 12px center" }}
               >
-                <option value="" className="bg-navy">Select an option</option>
-                <option value="Gym Membership" className="bg-navy">Gym Membership</option>
-                <option value="Personal Training" className="bg-navy">Personal Training 1:1</option>
-                <option value="HIIT" className="bg-navy">HIIT</option>
-                <option value="Muay Thai & Kickboxing" className="bg-navy">Muay Thai & Kickboxing</option>
-                <option value="Zumba" className="bg-navy">Zumba</option>
-                <option value="Yoga" className="bg-navy">Yoga</option>
-                <option value="Other" className="bg-navy">Other</option>
+                <option value="">Select an option</option>
+                <option value="Gym Membership">Gym Membership</option>
+                <option value="Personal Training">Personal Training 1:1</option>
+                <option value="HIIT">HIIT</option>
+                <option value="Muay Thai & Kickboxing">Muay Thai & Kickboxing</option>
+                <option value="Zumba">Zumba</option>
+                <option value="Yoga">Yoga</option>
+                <option value="Other">Other</option>
               </select>
             </div>
 

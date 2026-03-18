@@ -71,7 +71,7 @@ export default function Hero() {
       {/* Slideshow Controls */}
       <button
         onClick={prev}
-        className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-20 text-white/30 hover:text-white/70 transition-colors p-3"
+        className="absolute left-1 md:left-4 top-1/2 -translate-y-1/2 z-20 text-white/30 hover:text-white/70 transition-colors p-4"
         aria-label="Previous image"
       >
         <svg className="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -80,7 +80,7 @@ export default function Hero() {
       </button>
       <button
         onClick={next}
-        className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-20 text-white/30 hover:text-white/70 transition-colors p-3"
+        className="absolute right-1 md:right-4 top-1/2 -translate-y-1/2 z-20 text-white/30 hover:text-white/70 transition-colors p-4"
         aria-label="Next image"
       >
         <svg className="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">

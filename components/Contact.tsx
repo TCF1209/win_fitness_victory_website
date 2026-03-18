@@ -82,10 +82,10 @@ export default function Contact() {
             </a>
             <div className="mt-4">
               <a
-                href="https://wa.me/60333180999"
+                href="https://wa.me/60176961795"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-white px-5 py-2 text-sm font-semibold uppercase tracking-wider transition-colors"
+                className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-white px-5 py-3 text-sm font-semibold uppercase tracking-wider transition-colors"
                 style={{ clipPath: "polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px))" }}
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -112,9 +112,9 @@ export default function Contact() {
             </div>
             <div className="space-y-1">
               {hours.map((h) => (
-                <div key={h.day} className="flex justify-between gap-2 text-sm">
+                <div key={h.day} className="flex justify-between gap-2 text-xs sm:text-sm">
                   <span className="text-white/60 shrink-0">{h.day}</span>
-                  <span className={`text-right ${h.time === "Closed" ? "text-accent" : "text-muted"}`}>
+                  <span className={`text-right shrink-0 ${h.time === "Closed" ? "text-accent" : "text-muted"}`}>
                     {h.time}
                   </span>
                 </div>
