@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
 import About from "@/components/About";
 import Services from "@/components/Services";
+import Pricing from "@/components/Pricing";
 import Trainers from "@/components/Trainers";
 import Testimonials from "@/components/Testimonials";
 import JoinForm from "@/components/JoinForm";
@@ -18,6 +19,7 @@ export default function Home() {
       <Stats />
       <About />
       <Services />
+      <Pricing />
       <Trainers />
       <Testimonials />
       <JoinForm />
