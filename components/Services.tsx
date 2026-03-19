@@ -115,9 +115,13 @@ export default function Services() {
 
         {/* Premium tier */}
         <div className="grid md:grid-cols-3 gap-6 mb-10">
-          {premiumServices.map((service) => (
-            <div
+          {premiumServices.map((service, i) => (
+            <motion.div
               key={service.name}
+              initial={{ x: -30 }}
+              whileInView={{ x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.1 }}
               className="group relative bg-navy border border-white/10 rounded-sm p-4 pl-7 md:p-6 md:pl-9 overflow-hidden hover:border-white/20 transition-all duration-300"
             >
               {/* Left accent bar */}
@@ -133,15 +137,19 @@ export default function Services() {
                 {service.price}
                 <span className="text-muted text-xs font-normal"> / session</span>
               </p>
-            </div>
+            </motion.div>
           ))}
         </div>
 
         {/* Standard tier */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4">
-          {standardServices.map((service) => (
-            <div
+          {standardServices.map((service, i) => (
+            <motion.div
               key={service.name}
+              initial={{ x: -20 }}
+              whileInView={{ x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: i * 0.06 }}
               className="bg-blue/40 border border-white/5 rounded-sm p-4 hover:bg-blue/60 hover:border-white/10 transition-all duration-300"
             >
               <span className="text-neon/70">{service.icon}</span>
@@ -156,7 +164,7 @@ export default function Services() {
                   {service.price}
                 </p>
               )}
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
