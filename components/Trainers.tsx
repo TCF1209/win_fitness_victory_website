@@ -28,13 +28,13 @@ export default function Trainers() {
   return (
     <section className="py-20 md:py-28">
       <div className="max-w-5xl mx-auto px-6 md:px-16">
-        {/* Header — right-aligned */}
+        {/* Header — left-aligned */}
         <motion.div
-          initial={{ opacity: 0, x: 30 }}
+          initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-right mb-16"
+          className="mb-16"
         >
           <p className="text-muted text-sm uppercase tracking-[0.2em] mb-2">
             The Team
@@ -42,7 +42,7 @@ export default function Trainers() {
           <h2 className="font-display text-4xl md:text-5xl text-white">
             THE COACHES
           </h2>
-          <div className="w-10 h-0.5 bg-neon/40 mt-4 ml-auto" />
+          <div className="w-10 h-0.5 bg-neon/40 mt-4" />
         </motion.div>
 
         {/* Zig-zag trainer cards */}
